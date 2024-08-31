@@ -1,0 +1,68 @@
+"use client"
+
+import React, { useState } from 'react';
+import clsx from 'clsx';
+import { ArrowUpRightIcon, MenuIcon } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+const Navbar = () => {
+  const navItems = ["Products", "Integration", "Solution", "Resources"];
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  return (
+    <header className="bg-white py-4">
+      <nav className="container mx-auto flex md:flex-row flex-col justify-between items-start md:items-center px-4 md:px-0">
+        {/* Brand Logo */}
+        <div className='flex flex-row justify-between mx-0'>
+        <div className="text-2xl font-bold">Momento</div>
+
+        {/* Menu Toggle Button for Mobile */}
+        <Button
+          className="md:hidden"
+          onClick={() => setIsNavOpen(!isNavOpen)}
+        >
+          <MenuIcon className="h-6 w-6" />
+        </Button>
+        </div>
+        {/* Navigation Links */}
+        <div
+          className={clsx(
+            "flex-col md:flex-row md:flex",
+            isNavOpen ? "flex" : "hidden",
+            "gap-8 mt-4 md:mt-0"
+          )}
+        >
+          {navItems.map((item, index) => (
+            <a
+              key={index}
+              href="#"
+              className="text-lg font-medium hover:text-gray-700"
+            >
+              {item}
+            </a>
+          ))}
+        </div>
+
+        {/* Action Buttons */}
+        <div
+          className={clsx(
+            "flex-col md:flex-row md:flex",
+            isNavOpen ? "flex" : "hidden",
+            "gap-4 mt-4 md:mt-0 items-center"
+          )}
+        >
+          <a href="#" className="text-lg font-medium hover:text-gray-700">
+            Sign in
+          </a>
+          <Button className="flex items-center">
+            Open an account
+            <ArrowUpRightIcon className="h-4 w-4 ml-2" />
+          </Button>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+export default Navbar;
+
