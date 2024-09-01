@@ -10,7 +10,8 @@ const baseColors = {
   primaryLight: "#C2FA6B",  // Light green
   secondaryDark: "#0F2028", // Dark blue
   secondary: "#101828",     // Navy blue
-  secondaryLight: "#667085" // Gray
+  secondaryLight: "#667085", // Gray
+  white: "#ffffff"
 };
 
 //for light and dark mde 
