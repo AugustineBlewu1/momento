@@ -21,7 +21,7 @@ const CasePage = () => {
           </Button>
         </div>
 
-        <div className="pt-12 flex flex-row justify-between ">
+        <div className="pt-12 flex flex-row justify-between pb-20 ">
           <YoutubeComponent
             title="Time"
             videoId="F9sJbhJBj4Y"

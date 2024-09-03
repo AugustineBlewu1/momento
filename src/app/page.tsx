@@ -2,6 +2,9 @@ import Image from "next/image";
 import MainPage from "./(components)/MainPage";
 import Partners from "./(components)/Partners";
 import CasePage from "./(components)/CasePage";
+import Features from "./(components)/Features";
+import CustomPage from "./(components)/CustomPage";
+import FAQsPage from "./(components)/FAQsPage";
 
 export default function Home() {
   return (
@@ -9,6 +12,9 @@ export default function Home() {
          <MainPage />
          <Partners />
          <CasePage />
+         <Features />
+         <CustomPage/>
+         <FAQsPage />
     </main>
   );
 }
