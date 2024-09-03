@@ -60,15 +60,15 @@ const CustomPage = () => {
         </div>
         <div className="flex flex-col text-2xl justify-between items-center align-middle mr-10 space-y-14 mt-10 mb-20">
           {cardsContent?.comparison
-            .map((e) => ({
+            .map((e, index) => ({
               feature: e.feature,
               description: e?.description,
               discoverPlusCard: e?.["Discover Plus Card"],
               discoverPremiumCard: e?.["Discover Premium Card"],
             }))
             .map((card: CardsContent, index) => (
-              <>
-                <div className="w-full h-[1px] bg-gray-200" key={index}></div>
+              <section key={index} className="w-full space-y-7">
+                <div className="w-full h-[1px] bg-gray-200" ></div>
                 <div className="grid grid-cols-3 w-full items-center text-start">
                   <div className="flex flex-col">
                     <span className="font-light">{card.feature}</span>
@@ -79,9 +79,11 @@ const CustomPage = () => {
                   <div className="text-center flex justify-center">{card?.discoverPlusCard}</div>
                   <div className="text-center flex justify-center ml-24">{card?.discoverPremiumCard}</div>
                 </div>
-              </>
+              </section>
             ))}
         </div>
+
+        
       </div>
     </div>
   );

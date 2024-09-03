@@ -11,7 +11,7 @@ const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <header className="py-4">
+    <header className="py-4 sticky top-0 w-full bg-gray-100 ">
       <nav className="container mx-auto flex md:flex-row flex-col justify-between items-start md:items-center px-4 md:px-0">
         {/* Brand Logo */}
         <div className="flex flex-row justify-between mx-0">

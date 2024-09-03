@@ -5,6 +5,7 @@ import CasePage from "./(components)/CasePage";
 import Features from "./(components)/Features";
 import CustomPage from "./(components)/CustomPage";
 import FAQsPage from "./(components)/FAQsPage";
+import SignupPage from "./(components)/SignupPage";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
          <Features />
          <CustomPage/>
          <FAQsPage />
+         <SignupPage />
     </main>
   );
 }

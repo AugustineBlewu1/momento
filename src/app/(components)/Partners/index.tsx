@@ -18,12 +18,13 @@ const Partners = () => {
     <div className="flex flex-row gap-8 justify-center pt-9">
 
  
-      {logos.map((image) => (
+      {logos.map((image, index) => (
         <Image
           src={`/momento-logos/${image}`}
           alt="Logos"
           width={150}
           height={85}
+          key={index}
         />
       ))}
          </div>
