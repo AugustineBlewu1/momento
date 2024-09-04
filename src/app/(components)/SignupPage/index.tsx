@@ -18,7 +18,7 @@ const SignupPage = () => {
         love you to join
       </p>
       <div className="flex flex-row gap-10 justify-center mt-8">
-        <Button className="hover:bg-lime-200">
+        <Button className="hover:bg-lime-200 hover:text-primary">
           Open an account
           <ArrowUpRightIcon className="h-6 w-6" />
         </Button>
