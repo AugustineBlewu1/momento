@@ -24,7 +24,7 @@ const FAQsPage = () => {
 
         <div className="bg-white rounded-2xl p-6 ">
           <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="item-1">
+            <AccordionItem value="item-1" >
               <AccordionTrigger className="text-2xl ">Momento is Bank?</AccordionTrigger>
               <AccordionContent className="text-start text-xl ">
                <strong>Momento</strong>  is not a bank but rather a payment institution

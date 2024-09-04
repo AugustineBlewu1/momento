@@ -44,9 +44,54 @@ export const cardsContent = {
 }
 
 
+export const footerList = [
+  {
+      "category": "The Momento",
+      "items": [
+          "Payment methods",
+          "Business cards",
+          "Accounting",
+          "Google Pay",
+          "Apple Pay"
+      ]
+  },
+  {
+      "category": "Tools",
+      "items": [
+          "Banking comparators",
+          "Transfer account",
+          "Company creation",
+          "API"
+      ]
+  },
+  {
+      "category": "Support",
+      "items": [
+          "24/7 support",
+          "Help center",
+          "Free tools",
+          "Community"
+      ]
+  },
+  {
+      "category": "About",
+      "items": [
+          "Our story",
+          "Our customer",
+          "Careers",
+          "Financial glossary",
+          "Become a partner"
+      ]
+  }
+]
+
+
 export interface CardsContent {
     feature: string;
     description: string;
     discoverPlusCard: string;
     discoverPremiumCard: string
 }
+
+
+

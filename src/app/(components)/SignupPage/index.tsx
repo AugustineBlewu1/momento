@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SignupPage = () => {
   return (
-    <div className="py-20 w-full bg-primaryDark justify-center items-center relative my-16">
+    <div className="py-20 w-full bg-primaryDark justify-center items-center relative mt-16">
         <div className="absolute">
             <Image  src={"/momento-logos/Layer 17.png"} height={100} width={150} alt="Side Logo"/>
         </div>

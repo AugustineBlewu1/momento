@@ -6,6 +6,7 @@ import Features from "./(components)/Features";
 import CustomPage from "./(components)/CustomPage";
 import FAQsPage from "./(components)/FAQsPage";
 import SignupPage from "./(components)/SignupPage";
+import Footer from "./(components)/Footer";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
          <CustomPage/>
          <FAQsPage />
          <SignupPage />
+         <Footer />
     </main>
   );
 }
