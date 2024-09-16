@@ -6,9 +6,9 @@ const SignupPage = () => {
   return (
     <div className="py-20 w-full bg-primaryDark justify-center items-center relative mt-16">
         <div className="absolute">
-            <Image  src={"/momento-logos/Layer 17.png"} height={100} width={150} alt="Side Logo"/>
+            <Image  src={"/momento-logos/Layer 17.png"} height={100} width={150} alt="Side Logo" className="hidden md:block"/>
         </div>
-      <h2 className="font-medium text-4xl text-center text-white tracking-wider">
+      <h2 className="font-medium text-3xl md:text-4xl text-center text-white tracking-wider">
         Sign up in minutes. Join the movement
       </h2>
       <p className="text-center text-slate-200 font-light text-lg mt-6">

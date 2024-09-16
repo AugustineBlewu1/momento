@@ -23,10 +23,10 @@ const YoutubeComponent = (props: Props) => {
   };
 
   return (
-    <Card className="w-[33.5rem] text-center items-center">
+    <Card className="w-[23.5rem] md:w-[33.5rem] text-center items-center">
       <CardHeader>
         <div className="relative">
-        <YouTube videoId={props.videoId} opts={opts} className="aspect-ratio" iframeClassName={"rounded-2xl"}/>
+        <YouTube videoId={props.videoId} opts={opts} className="aspect-ratio" iframeClassName={"rounded-2xl w-full h-auto"}/>
         <div className="absolute bottom-0 text-white w-full">
           <div className="flex flex-row justify-between px-5 text-lg py-3">
           <span>{props.founder.name}</span>

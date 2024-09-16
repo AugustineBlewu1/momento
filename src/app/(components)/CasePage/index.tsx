@@ -5,13 +5,13 @@ import YoutubeComponent from "../YoutubeComponent";
 
 const CasePage = () => {
   return (
-    <div className="bg-white w-full px-72">
+    <div className="bg-white w-full px-5 md:px-72">
       <div className="pt-20">
         <span className="uppercase bg-lime-200 px-4 py-3 rounded-xl">
           Case Studies
         </span>
 
-        <div className="flex flex-row justify-between pt-10 items-end">
+        <div className="flex flex-col md:flex-row justify-between pt-10 items-start md:items-end space-y-4 md:space-y-0">
           <span className="text-3xl font-light">
             Loved by industry leaders <br></br> See what customers are saying.
           </span>
@@ -21,7 +21,7 @@ const CasePage = () => {
           </Button>
         </div>
 
-        <div className="pt-12 flex flex-row justify-between pb-20 ">
+        <div className="pt-12 flex flex-col md:flex-row justify-between pb-20 ">
           <YoutubeComponent
             title="Time"
             videoId="F9sJbhJBj4Y"
@@ -31,7 +31,7 @@ const CasePage = () => {
           ></YoutubeComponent>
           <YoutubeComponent
             title="Time"
-            videoId="F9sJbhJBj4Y"
+            videoId="7FomMiKEeEo"
             description="Excellent service! We were able to deposit the share capital online, and the
 customer service was really helpful"
             founder={{ name: "Brandon Marron", company: "Starbust" }}

@@ -14,9 +14,8 @@ const Partners = () => {
 
   return (
     <div className="w-full h-64 bg-primaryDark text-center items-center py-16">
-      <h2 className="text-2xl text-white ">The fatest growing companies use Momento</h2>
-    <div className="flex flex-row gap-8 justify-center pt-9">
-
+      <h2 className="text-xl text-white md:text-2xl ">The fastest growing companies use Momento</h2>
+    <div className="md:flex grid grid-cols-2 md:flex-row gap-3 md:gap-8 justify-center pt-9">
  
       {logos.map((image, index) => (
         <Image

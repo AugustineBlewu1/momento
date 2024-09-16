@@ -23,9 +23,10 @@ const FeatureCard = (props: Pros) => {
     <Card
       className={clsx(
         " p-0",
-        props?.isBlack ? "bg-secondaryDark w-[400px]" : " bg-white w-[480px]"
+        props?.isBlack ? "bg-secondaryDark w-[300px] md:w-[400px]" : " bg-white  w-[350px] md:w-[480px]"
       )}
     >
+
       <CardHeader>
         <div>
           <Image
@@ -33,6 +34,8 @@ const FeatureCard = (props: Pros) => {
             alt=""
             width={props?.isBlack ? 380 : 450}
             height={170}
+            layout="responsive"
+            objectFit="cover"
           />
         </div>
       </CardHeader>

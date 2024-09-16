@@ -1,3 +1,6 @@
+
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { footerList } from "@/lib/utils";
@@ -7,8 +10,8 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="bg-white py-20 w-full px-72">
-      <div className="flex flex-row w-full justify-between ">
+    <div className="bg-white py-20 w-full px-5 md:px-72">
+      <div className="flex flex-col md:flex-row w-full justify-between ">
         <div className="flex items-star flex-col  space-y-5 ">
           <div className=" flex flex-row gap-3">
             <Image
@@ -41,7 +44,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-row justify-evenly w-[900px] ml-20">
+        <div className="md:flex grid grid-cols-2 md:flex-row gap-4 md:justify-evenly md:w-[900px] md:ml-20 mt-4">
           {footerList?.map((footer, index) => (
             <div key={index}>
               <strong className="text-xl">{footer.category}</strong>
@@ -54,12 +57,12 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-row justify-between items-end  mt-16">
+      <div className="flex flex-col md:flex-row justify-start md:justify-between  md:items-end mt-16">
         <div className="space-y-4">
           <p>Follow our latest news</p>
           <InputWithButton />
         </div>
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-row justify-between md:justify-start gap-4 mt-6 ">
           <Button className="flex items-center text-lg gap-2 bg-lime-200">
             <Lollipop className="h-4 w-4 " />
             Android
@@ -73,7 +76,7 @@ const Footer = () => {
         <div className="h-[1px] w-full bg-gray-400 my-8 "></div>
       <div className="flex flex-row justify-between text-lg">
           <p>Momento Ltd @2024. All Rights Reserved</p>
-          <span className="flex flex-row items-center gap-3">
+          <span className="flex flex-row items-start md:items-center gap-3">
             <Facebook />
             <LucideLinkedin />
             <Twitter />

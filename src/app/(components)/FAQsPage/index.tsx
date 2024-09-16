@@ -9,10 +9,10 @@ import { ArrowUpRightIcon } from "lucide-react";
 
 const FAQsPage = () => {
   return (
-    <div className="w-full px-72 text-center mt-44">
-      <div className="grid grid-cols-2 ">
-        <div className="space-y-5">
-          <h2 className="font-light text-3xl text-start tracking-wider">
+    <div className="w-full px-4 md:px-72 text-center mt-44">
+      <div className="grid grid-cols-1 md:grid-cols-2 ">
+        <div className="space-y-3 md:space-y-5">
+          <h2 className="font-light text-2xl md:text-3xl text-start tracking-wider">
             Frequently Asked <br />
             Questions about Momento .
           </h2>
@@ -22,11 +22,11 @@ const FAQsPage = () => {
           </Button>
         </div>
 
-        <div className="bg-white rounded-2xl p-6 ">
+        <div className="bg-white rounded-2xl p-6 mt-5">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1" >
-              <AccordionTrigger className="text-2xl ">Momento is Bank?</AccordionTrigger>
-              <AccordionContent className="text-start text-xl ">
+              <AccordionTrigger className="text-lg md:text-2xl ">Momento is Bank?</AccordionTrigger>
+              <AccordionContent className="text-start text-lg md:text-xl ">
                <strong>Momento</strong>  is not a bank but rather a payment institution
                 supervised by the Banque de France (under the number CIB 16958).
                 We enable companies (existing ones or those in the process of
@@ -43,11 +43,11 @@ const FAQsPage = () => {
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2" >
-              <AccordionTrigger className="text-2xl ">Who can open a Momento Account</AccordionTrigger>
+              <AccordionTrigger className="text-lg md:text-2xl ">Who can open a Momento Account</AccordionTrigger>
              
             </AccordionItem>
             <AccordionItem value="item-3" >
-              <AccordionTrigger className="text-2xl ">   How do international payment work?
+              <AccordionTrigger className="text-lg md:text-2xl ">   How do international payment work?
               </AccordionTrigger>
               <AccordionContent>
               </AccordionContent>

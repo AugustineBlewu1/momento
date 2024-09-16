@@ -11,11 +11,11 @@ import { CreditCard, IdCardIcon, Notebook, NotebookPen } from "lucide-react";
 const TabsPage = () => {
   return (
     <>
-      <Tabs defaultValue="account" className="w-[600px]">
+      <Tabs defaultValue="account" className="w-[350px] md:w-[600px]">
         <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="account" className="rounded-2xl gap-4"> <CreditCard/> Business account</TabsTrigger>
-          <TabsTrigger value="invoice " className="rounded-2xl gap-4"> <Notebook/> Invoice management</TabsTrigger>
-          <TabsTrigger value="bookeeping" className="rounded-2xl gap-4"> <NotebookPen/> Book keeping & reporting</TabsTrigger>
+          <TabsTrigger value="account" className="rounded-2xl text-xs md:text-xl gap-2 md:gap-4"> <CreditCard/> Business account</TabsTrigger>
+          <TabsTrigger value="invoice " className="rounded-2xl text-xs md:text-xl gap-2 md:gap-4"> <Notebook/> Invoice management</TabsTrigger>
+          <TabsTrigger value="bookeeping" className="rounded-2xl text-xs md:text-xl gap-2 md:gap-4"> <NotebookPen/> Book keeping & reporting</TabsTrigger>
         </TabsList>
         {/* <TabsContent value="account">
           <Card>
