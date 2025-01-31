@@ -24,7 +24,7 @@ export default function Home() {
     
   };
   return (
-    <main className="flex min-h-screen flex-col  " ref={container}>
+    <main className="flex min-h-screen flex-col" ref={container}>
          <MainPage  {...style}/>
          <Partners  />
          <CasePage />
